@@ -10,10 +10,9 @@ def root_mean_square(number_array, num):
     mean = (square / (float)(n))  
     root = math.sqrt(mean) 
     return root
-number_array = list()
-num = input("Total count of number :")
-print ('Enter numbers in array: ')
-for i in range(int(num)):
-    print("Number",i,str(":"));n = input("")
-    number_array.append(float(n))
-print(root_mean_square(number_array,num))
+number = str (input("Enter comma separated numbers: "))
+list = number.split (",")
+number_array = []
+for i in list:
+	number_array.append(float(i))
+print(root_mean_square(number_array,len(number_array)))
