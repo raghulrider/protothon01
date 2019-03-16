@@ -20,7 +20,7 @@ int main()
             {
                 value = value*(i-k+1)/k;
             }
-            //printf("  "); //Uncomment this print line if you want clear answer for large number of rows
+            //printf("  "); //Uncomment this print line if you want clear answer for large number of rows and remove 4 from next print line
             printf("%4d", value);
         }
         printf("  \n");
